@@ -1,0 +1,51 @@
+{
+    "name": "xIndexedDB",
+    "version": "1.0.0",
+    "description": "IndexedDB extension",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --config webpack.config.prod.js --progress",
+        "build:watch": "webpack --config webpack.config.prod.watch.js --progress",
+        "test": "karma start",
+        "test:watch": "karma start --no-single-run --auto-watch",
+        "deploy": "npm run build && node utils/deploy.js"
+    },
+    "keywords": [
+        "IndexedDB",
+        "extension",
+        "adapter",
+        "repository"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OleksandrTheGreat/xIndexedDB.git"
+    },
+    "author": "OleksandrTheGreat",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jasmine": "^2.5.51",
+        "awesome-typescript-loader": "^3.1.3",
+        "css-loader": "^0.28.4",
+        "extract-text-webpack-plugin": "^2.1.2",
+        "file-loader": "^1.1.5",
+        "gh-pages": "^1.0.0",
+        "html-loader": "^0.4.5",
+        "html-webpack-plugin": "^2.29.0",
+        "jasmine": "^2.6.0",
+        "karma": "^1.7.0",
+        "karma-jasmine": "^1.1.0",
+        "karma-phantomjs-launcher": "^1.0.4",
+        "karma-webpack": "^2.0.3",
+        "node-sass": "^4.5.3",
+        "requirejs": "^2.3.3",
+        "sass-loader": "^6.0.6",
+        "sourcemap": "^0.1.0",
+        "style-loader": "^0.18.2",
+        "to-string-loader": "^1.1.5",
+        "typescript": "^2.3.4",
+        "webpack": "^2.6.1",
+        "xfs": "https://github.com/OleksandrTheGreat/xfs.git",
+        "xjasmine": "https://github.com/OleksandrTheGreat/xjasmine.git",
+        "xwebpack": "https://github.com/OleksandrTheGreat/xwebpack.git"
+    }
+}

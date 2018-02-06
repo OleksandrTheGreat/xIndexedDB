@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "strictNullChecks": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "skipLibCheck": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "lib": ["es2015", "dom"],
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "baseUrl": "./",
+        "declaration": true
+    },
+    "include": [
+        "./dist/build/**/*"
+    ],
+    "exclude": [
+        "src",
+        "utils",
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}
